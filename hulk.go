@@ -191,12 +191,10 @@ func httpcall(url string, host string, data string, headers arrayFlags, s chan u
 		q.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36")
 		q.Header.Set("Cache-Control", "no-cache")
 		q.Header.Set("Accept-Charset", acceptCharset)
-		q.Header.Set("Referer", "")
-		//q.Header.Set("Referer", headersReferers[rand.Intn(len(headersReferers))]+buildblock(rand.Intn(5)+5))
+		q.Header.Set("Referer", headersReferers[rand.Intn(len(headersReferers))]+buildblock(rand.Intn(5)+5))
 		q.Header.Set("Keep-Alive", strconv.Itoa(rand.Intn(10)+100))
 		q.Header.Set("Connection", "keep-alive")
 		q.Header.Set("Upgrade-Insecure-Requests", "1")
-		q.Header.Set("Cookie", "cf_clearance=Bz20M2Mhjhp1gqEbd9RvwdwuxGIn8i8kCuQh5zra4Kg-1702560855-0-1-433df5b6.416b3d5a.143caa56-160.0.0; _ga=GA1.1.1473204697.1702561087; _ga_0HSKEE4DEK=GS1.1.1702621781.4.0.1702621781.0.0.0; useragent=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzEyMC4wLjAuMCBTYWZhcmkvNTM3LjM2; _uafec=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F120.0.0.0%20Safari%2F537.36;  ")
 		q.Header.Set("Host", host)
 
 		// Overwrite headers with parameters
