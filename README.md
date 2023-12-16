@@ -18,7 +18,6 @@ This is open source code. I am not responsible if you use it for malicious attac
 ## Contact Developer
 ```sh
  Buy Me a Coffee BTC: 3MxrJbEjqrQm4DQ71TPs5wSYX3opMjrvVb
- LEAKS https://t.me/hackingleak
- Dev : https://t.me/rebychubx
+ Dev : https://t.me/cutihaclao
 ```
 
